@@ -15,5 +15,13 @@ public class Aula05EstruturasCondicionais {
             System.out.println("Não autorizado a comprar bebida alcólica ");
         }
         
+        boolean bolinando = false;
+        
+        if(bolinando) {
+            System.out.println("Verdadeiro");
+        } else {
+            System.out.println("Falso");
+        }
+        
     }
 }
