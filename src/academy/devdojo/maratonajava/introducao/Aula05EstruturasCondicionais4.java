@@ -20,6 +20,5 @@ public class Aula05EstruturasCondicionais4 {
         } else {
             System.out.println("Você vai pagar €"+ (salario * taxa3) / 100);
         }
-        
     }
 }

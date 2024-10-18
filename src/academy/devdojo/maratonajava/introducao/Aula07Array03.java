@@ -13,7 +13,7 @@ public class Aula07Array03 {
             System.out.println(numeros2[i]);
         }
         
-        // Versão simplificada mas não tem como acessar o índice
+        // Versão simplificada, mas não tem como acessar o índice
         for(int num: numeros3){
             System.out.println(num);
         }
