@@ -26,11 +26,11 @@ public class Anime {
         System.out.println(this.episodios);
         System.out.println(this.genero);
     }
-    
+
     public void setNome(String nome) {
         this.nome = nome;
     }
-    
+
     public String getNome() {
         return this.nome;
     }
