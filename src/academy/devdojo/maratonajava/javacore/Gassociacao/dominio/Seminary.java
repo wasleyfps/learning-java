@@ -4,8 +4,10 @@ public class Seminary {
     private String title;
     private Student[] students;
     private Local local;
-    public Seminary(String title) {
+    
+    public Seminary(String title, Local local) {
         this.title = title;
+        this.local = local;
     }
     
     public Seminary(String title, Student[] students) {
