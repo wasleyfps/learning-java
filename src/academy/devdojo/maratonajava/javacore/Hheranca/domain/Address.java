@@ -3,7 +3,6 @@ package academy.devdojo.maratonajava.javacore.Hheranca.domain;
 public class Address {
     private String street;
     private String postcode;
-
  
     public String getStreet() {
         return street;
