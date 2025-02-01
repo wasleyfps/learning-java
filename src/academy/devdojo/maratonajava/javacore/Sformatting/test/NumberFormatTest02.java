@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.Rdates.test;
+package academy.devdojo.maratonajava.javacore.Sformatting.test;
 
 import java.text.NumberFormat;
 import java.util.Locale;
