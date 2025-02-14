@@ -28,4 +28,6 @@ public class BasicFileAttributesTest01 {
         System.out.println(Files.isReadable(path));
         System.out.println(Files.isExecutable(path));
     }
+    
+    
 }
