@@ -6,7 +6,7 @@ import java.nio.file.Paths;
 public class ResolveTest01 {
     public static void main(String[] args) {
 
-        Path dir = Paths.get("home/wasley");
+//        Path dir = Paths.get("home/wasley");
         Path file = Paths.get("dev/file.txt");
         Path resolve = dir.resolve(file);
         System.out.println(resolve);
