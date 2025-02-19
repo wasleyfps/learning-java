@@ -8,8 +8,8 @@ public class ResolveTest01 {
 
 //        Path dir = Paths.get("home/wasley");
         Path file = Paths.get("dev/file.txt");
-        Path resolve = dir.resolve(file);
-        System.out.println(resolve);
+//        Path resolve = dir.resolve(file);
+//        System.out.println(resolve);
         System.out.println("---------------------------------");
         
         Path absolute = Paths.get("/home/wasley");
