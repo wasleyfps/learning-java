@@ -29,7 +29,7 @@ public class SerializationTest01 {
     private static void unrealize(){
         Path path = Paths.get("pasta/subpasta");
         try(ObjectInputStream objectInputStream = new ObjectInputStream(Files.newInputStream(path))){
-            Student student = (Student) objectInputStream.readObject();
+//            Student student = (Student) objectInputStream.readObject();
         } catch(IOException | ClassCastException e){
             e.printStackTrace();
         }

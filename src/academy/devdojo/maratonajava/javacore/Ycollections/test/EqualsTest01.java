@@ -1,10 +1,12 @@
 package academy.devdojo.maratonajava.javacore.Ycollections.test;
 
+import academy.devdojo.maratonajava.javacore.Ycollections.domain.Smartphone;
+
 public class EqualsTest01 {
     public static void main(String[] args) {
-//        String name = "Wasley Carvalho";
-//        String name2 = "Wasley Carvalho";
-//        System.out.println(name == name2);
-        System.out.println("Wasley Carvalho");
+        Smartphone smartphone = new Smartphone("1ABC1", "iPhone");
+        Smartphone smartphone2 = new Smartphone("1ABC1", "iPhone");
+        System.out.println(smartphone.equals(smartphone2));
     }
+    
 }
