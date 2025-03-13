@@ -6,7 +6,7 @@ import java.util.List;
 
 public class GenericMethodTest01 {
     public static void main(String[] args) {
-        createArrayObject(new Boat("Speedboat"));        
+//        createArrayObject(new Boat("Speedboat"));        
     }
     
 //    private static <T> void createArrayObject(T t){
