@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.ZZCLambdas.test;
+package academy.devdojo.maratonajava.javacore.ZZClambdas.test;
 
 import java.util.Arrays;
 import java.util.List;

@@ -1,6 +1,6 @@
-package academy.devdojo.maratonajava.javacore.ZZCLambdas.service;
+package academy.devdojo.maratonajava.javacore.ZZClambdas.service;
 
-import academy.devdojo.maratonajava.javacore.ZZCLambdas.domain.Anime;
+import academy.devdojo.maratonajava.javacore.ZZClambdas.domain.Anime;
 
 public class AnimeComparators {
     public static int compareByTitle(Anime a1, Anime a2) {
@@ -8,6 +8,10 @@ public class AnimeComparators {
     }
     
     public static int compareByEpisode(Anime a1, Anime a2) {
+        return Integer.compare(a1.getEpisodes(),  a2.getEpisodes());
+    }
+
+    public int compareByEpisodeNonStatic(Anime a1, Anime a2) {
         return Integer.compare(a1.getEpisodes(),  a2.getEpisodes());
     }
 }

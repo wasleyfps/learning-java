@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.ZZBehavior.domain;
+package academy.devdojo.maratonajava.javacore.ZZBbehavior.domain;
 
 public class Car {
     private String name = "Audi";

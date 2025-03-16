@@ -1,13 +1,14 @@
-package academy.devdojo.maratonajava.javacore.ZZCLambdas.test;
+package academy.devdojo.maratonajava.javacore.ZZClambdas.test;
 
-import academy.devdojo.maratonajava.javacore.ZZCLambdas.domain.Anime;
-import academy.devdojo.maratonajava.javacore.ZZCLambdas.service.AnimeComparators;
+import academy.devdojo.maratonajava.javacore.ZZClambdas.domain.Anime;
+import academy.devdojo.maratonajava.javacore.ZZClambdas.service.AnimeComparators;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
 public class MethodReferenceTest01 {
+    // Reference to a static method
     public static void main(String[] args) {
         List<Anime> animeList = new ArrayList<>(List.of(new Anime("Berserk", 20), new Anime("One Piece", 500), new Anime("Solo Leveling", 40)));
         //Collections.sort(animeList, (a1,a2) -> a1.getTitle().compareTo(a2.getTitle()));

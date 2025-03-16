@@ -1,6 +1,6 @@
-package academy.devdojo.maratonajava.javacore.ZZBehavior.test;
+package academy.devdojo.maratonajava.javacore.ZZBbehavior.test;
 
-import academy.devdojo.maratonajava.javacore.ZZBehavior.domain.Car;
+import academy.devdojo.maratonajava.javacore.ZZBbehavior.domain.Car;
 
 import java.util.ArrayList;
 import java.util.List;
