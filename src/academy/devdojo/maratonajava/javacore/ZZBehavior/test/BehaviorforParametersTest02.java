@@ -1,11 +1,10 @@
-package academy.devdojo.maratonajava.javacore.ZZZBehavior.test;
+package academy.devdojo.maratonajava.javacore.ZZBehavior.test;
 
-import academy.devdojo.maratonajava.javacore.ZZZBehavior.domain.Car;
-import academy.devdojo.maratonajava.javacore.ZZZBehavior.interfaces.CarPredicate;
+import academy.devdojo.maratonajava.javacore.ZZBehavior.domain.Car;
+import academy.devdojo.maratonajava.javacore.ZZBehavior.interfaces.CarPredicate;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.function.Predicate;
 
 public class BehaviorforParametersTest02 {
     private static List<Car> cars = List.of(

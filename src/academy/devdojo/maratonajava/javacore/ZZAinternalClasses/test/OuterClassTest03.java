@@ -1,6 +1,4 @@
-package academy.devdojo.maratonajava.javacore.ZZinternalClasses.test;
-
-import java.sql.SQLOutput;
+package academy.devdojo.maratonajava.javacore.ZZAinternalClasses.test;
 
 public class OuterClassTest03 {
     private String name =  "Wasley";

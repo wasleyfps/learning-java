@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.ZZinternalClasses.test;
+package academy.devdojo.maratonajava.javacore.ZZAinternalClasses.test;
 
 class Animal{
     public void walk(){

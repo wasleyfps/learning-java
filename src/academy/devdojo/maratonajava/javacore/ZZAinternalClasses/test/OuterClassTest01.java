@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.ZZinternalClasses.test;
+package academy.devdojo.maratonajava.javacore.ZZAinternalClasses.test;
 
 public class OuterClassTest01 {
     private String name = "Saitama";

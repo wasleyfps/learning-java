@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.ZZinternalClasses.test;
+package academy.devdojo.maratonajava.javacore.ZZAinternalClasses.test;
 
 import academy.devdojo.maratonajava.javacore.Zgenerics.domain.Boat;
 
