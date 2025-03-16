@@ -13,7 +13,7 @@ public class Anime {
         return title;
     }
 
-    public int getQuantity() {
+    public int getEpisodes() {
         return episodes;
     }
 
