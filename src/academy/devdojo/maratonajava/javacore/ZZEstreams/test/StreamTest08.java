@@ -4,8 +4,7 @@ import academy.devdojo.maratonajava.javacore.ZZEstreams.classes.LightNovel;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.DoubleStream;
-import java.util.stream.Stream;
+
 
 public class StreamTest08 {
     private static List<LightNovel> lightNovels = new ArrayList<>(List.of(
@@ -25,7 +24,7 @@ public class StreamTest08 {
                 .filter(price -> price > 5)
                 .reduce(Double::sum)
                 .ifPresent(System.out::println);
-        
+
         double sum = lightNovels.stream() //Strean<Double>
                 .mapToDouble(LightNovel::getPrice)
                 .filter(price -> price > 5)
