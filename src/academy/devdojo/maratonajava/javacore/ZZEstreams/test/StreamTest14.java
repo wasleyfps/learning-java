@@ -4,13 +4,14 @@ import academy.devdojo.maratonajava.javacore.ZZEstreams.classes.Category;
 import academy.devdojo.maratonajava.javacore.ZZEstreams.classes.LightNovel;
 import academy.devdojo.maratonajava.javacore.ZZEstreams.classes.Promotion;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
+import java.util.function.BinaryOperator;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
-public class StreamTest13 {
+import static java.util.stream.Collectors.groupingBy;
+
+public class StreamTest14 {
     private static List<LightNovel> lightNovels = new ArrayList<>(List.of(
             new LightNovel("Saitama", 8.99, Category.DRAMA),
             new LightNovel("Overlord", 10.99, Category.FANTASY),
@@ -23,24 +24,19 @@ public class StreamTest13 {
     ));
 
     public static void main(String[] args) {
-        Map<Promotion, List<LightNovel>> collect = lightNovels
-                .stream()
-                .collect(Collectors.groupingBy(
-                        ln -> {
-                            return getPromotion(ln);
-                        }
-                ));
+        Map<Category, Long> collect = lightNovels.stream().collect(groupingBy(LightNovel::getCategory, Collectors.counting()));
         System.out.println(collect);
-        // Map<Category>, Map<Promotion, List<LightNovel>>>
-
-        Map<Category, Map<Promotion, List<LightNovel>>> collect1 = lightNovels.stream()
-                .collect(Collectors.groupingBy(LightNovel::getCategory,
-                        Collectors.groupingBy(ln -> getPromotion(ln)
-                        )));
+        Map<Category, Optional<LightNovel>> collect1 = lightNovels.stream()
+                .collect(
+                        groupingBy(LightNovel::getCategory, Collectors.maxBy(Comparator.comparing(LightNovel::getPrice))));
         System.out.println(collect1);
-    }
 
-    private static Promotion getPromotion(LightNovel ln) {
-        return ln.getPrice() < 6 ? Promotion.UNDER_PROMOTION : Promotion.NORMAL_PRICE;
+        Map<Category, LightNovel> collect2 = lightNovels.stream().collect(groupingBy(LightNovel::getCategory,
+                Collectors.collectingAndThen(Collectors.maxBy(Comparator.comparing(LightNovel::getPrice)), Optional::get)));
+        System.out.println(collect2);
+
+        Map<Category, LightNovel> collect3 = lightNovels.stream().collect(Collectors.toMap(LightNovel::getCategory, 
+                Function.identity(), BinaryOperator.maxBy(Comparator.comparing(LightNovel::getPrice))));
+        System.out.println(collect3);
     }
 }
