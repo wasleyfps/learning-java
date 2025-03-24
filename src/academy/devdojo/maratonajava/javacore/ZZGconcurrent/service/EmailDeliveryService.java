@@ -1,31 +1,31 @@
-package academy.devdojo.maratonajava.javacore.ZZFthreads.service;
+package academy.devdojo.maratonajava.javacore.ZZGconcurrent.service;
 
-import academy.devdojo.maratonajava.javacore.ZZFthreads.domain.Members;
+import academy.devdojo.maratonajava.javacore.ZZGconcurrent.domain.Members;
 
-public class EmailDeliveryService implements Runnable{
+public class EmailDeliveryService implements Runnable {
     private final Members members;
-    
-    public EmailDeliveryService(Members members){
+
+    public EmailDeliveryService(Members members) {
         this.members = members;
     }
-    
+
     @Override
     public void run() {
         String threadName = Thread.currentThread().getName();
         System.out.println(threadName + " preparing to run and deliver emails");
-        while (members.isOpen() || members.pendingEmails() > 0){
-            try{
+        while (members.isOpen() || members.pendingEmails() > 0) {
+            try {
                 String email = members.retrieveEmail();
-                if(email == null) continue;
+                if (email == null) continue;
                 System.out.println(threadName + " sending email to " + email);
                 Thread.sleep(2000);
                 System.out.println(threadName + " sent the email sucessfully to " + email);
-            } catch (InterruptedException e){
+            } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
         System.out.println("All emails were sent successfully!");
     }
-    
-    
+
+
 }

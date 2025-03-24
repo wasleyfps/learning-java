@@ -30,7 +30,7 @@ public class Members {
         synchronized (this.emails){
             System.out.println(Thread.currentThread().getName() + " just added an email to the list");
             this.emails.add(email);
-            this.notifyAll();
+            this.emails.notifyAll();
         }
     }
     
@@ -38,7 +38,7 @@ public class Members {
         open = false;
         synchronized (this.emails) {
             System.out.println(Thread.currentThread().getName()+ " Notifying all thread that emails are closed");
-            this.notifyAll();
+            this.emails.notifyAll();
         }
     }
 }
