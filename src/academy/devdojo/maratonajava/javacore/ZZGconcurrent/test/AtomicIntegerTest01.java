@@ -1,7 +1,5 @@
 package academy.devdojo.maratonajava.javacore.ZZGconcurrent.test;
 
-import academy.devdojo.maratonajava.javacore.ZZFthreads.service.EmailDeliveryService;
-
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
