@@ -2,7 +2,7 @@ package academy.devdojo.maratonajava.javacore.ZZGconcurrent.test;
 
 import academy.devdojo.maratonajava.javacore.ZZGconcurrent.service.StoreService;
 
-import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.CompletableFuture;  
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
 
